@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+li {
+   width: 110px;
+   height: 42px;
+   background-color: black;
+}
+
+li a {
+   width: 32px;
+   height: 32px;
+  color: white;
+}
+</style>
+<body style="background-color:Tomato;">
+
+ <h1 style="background-color:DodgerBlue;">REGISTRATION FORM</h1>
+
+    <form>
+         <div class="form-group row">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="name">
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" value="lastname">
+         </div>
+</form>
+    <form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+ <form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">PHONE NUMBER</label>
+    <div class="col-sm-10">
+      <input type="phone number" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+</form>
+         <form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">PASSPORT NUMBER</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+         </form>
+        <div class="form-group row">
+        <label for="birthday">DATE OF BIRTH</label>
+        <div class="col-sm-10">
+  <input type="date" id="birthday" name="birthday">
+        </div>
+        </div>
+
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+             <div class="form-group row">
+  Select image to upload:
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Upload Image" name="submit">
+             </div>
+</form>
+     <div class="form-group row">
+
+         <a href=" http://127.0.0.1:8000/login/">login</a>
+
+  </div>
+</body>
+</html>
